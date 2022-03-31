@@ -1,0 +1,26 @@
+server:
+  #ip: 123.56.84.229
+  ip: localhost
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dragon?serverTimezone=GMT%2b8
+    username: root
+    password: '0927'
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #扫描所有mybatis的xml文件
+#  configuration:
+   # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    #本地的保存文件文件夹
+    path: D:/javaproject/springboot-vue-start/files/
+  #部署服务器的文件夹
+   # path: /home/files/

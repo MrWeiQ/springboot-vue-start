@@ -1,0 +1,7 @@
+package com.dragon.springboot.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.dragon.springboot.entity.Dict;
+
+public interface DictMapper extends BaseMapper<Dict> {
+}
